@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ### Базовое использование
 
 ```bash
-python universal_xml_parser.py путь_к_файлу.xml
+python xmlparser.py путь_к_файлу.xml
 ```
 
 Результаты будут сохранены в директорию `output/ГГГГ_ММ_ДД/`.
@@ -41,7 +41,7 @@ python universal_xml_parser.py путь_к_файлу.xml
 ### Параметры командной строки
 
 ```bash
-python universal_xml_parser.py [путь_к_файлу.xml] [параметры]
+python xmlparser.py [путь_к_файлу.xml] [параметры]
 ```
 
 Доступные параметры:
