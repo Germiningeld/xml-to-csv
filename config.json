@@ -1,0 +1,55 @@
+{
+    "input_file": "catalog.xml",
+    "output_dir": "output/exports",
+    
+    "// Формат выходного файла": "Комментарий",
+    "format": "xlsx",
+    
+    "// Настройки для CSV формата": "Комментарий",
+    "encoding": "cp1251",
+    "csv_delimiter": ";",
+    
+    "// Настройки обработки данных": "Комментарий",
+    "delimiter": "||",
+    "max_field_length": 32767,
+    
+    "// Основной элемент для обработки (если не указан, определяется автоматически)": "Комментарий",
+    "main_element_path": "shop/offers/offer",
+    
+    "// Фильтрация полей": "Комментарий",
+    "include_paths": [
+      "shop/offers/offer[@id]",
+      "shop/offers/offer[@available]",
+      "shop/offers/offer/name",
+      "shop/offers/offer/vendorCode",
+      "shop/offers/offer/url",
+      "shop/offers/offer/price",
+      "shop/offers/offer/optprice",
+      "shop/offers/offer/currencyId",
+      "shop/offers/offer/categoryId",
+      "shop/offers/offer/picture",
+      "shop/offers/offer/dimensions",
+      "shop/offers/offer/description",
+      "shop/offers/offer/country_of_origin",
+      "shop/offers/offer/param"
+    ],
+    
+    "exclude_paths": [
+      "shop/offers/offer/delivery",
+      "shop/offers/offer/pickup"
+    ],
+    
+    "// Максимальная глубина рекурсии при анализе": "Комментарий",
+    "max_depth": 15,
+    
+    "// Дополнительные настройки логирования": "Комментарий",
+    "log_level": "INFO",
+    
+    "// Настройки для обработки HTML в описаниях": "Комментарий",
+    "clean_html": true,
+    "preserve_linebreaks": false,
+    
+    "// Обработка специальных символов": "Комментарий",
+    "replace_invisible_chars": true,
+    "normalize_whitespace": true
+  }
